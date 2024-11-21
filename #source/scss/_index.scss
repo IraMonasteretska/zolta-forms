@@ -1,0 +1,448 @@
+.form-wrapper {
+    padding: 40px;
+}
+
+.form-header {
+    text-align: center;
+    border: 1px solid #3061b0;
+    padding: 20px;
+    background: #3061b01f;
+    margin-bottom: 30px;
+
+    h1 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    p {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+
+        span {
+            text-transform: initial;
+            display: block;
+            font-size: 14px;
+        }
+    }
+}
+
+// File Label
+.file-label {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    background: #3061b01f;
+    border-bottom: 1px solid #3061b0;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.file-label__body {
+    padding: 20px;
+}
+
+.file-label__title {
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-break: break-all;
+    margin: 0;
+}
+
+.file-label__info {
+    text-align: center;
+
+    .number {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .infotext {
+        margin: 0;
+    }
+}
+
+// File info
+.file-information {
+    margin-bottom: 30px;
+}
+
+.file-information__body {
+    padding: 20px;
+
+    .title {
+        margin: 0;
+        font-weight: 500;
+        font-size: 21px;
+
+        span {
+            display: block;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 120%;
+        }
+    }
+}
+
+.dateinputs {
+    display: flex;
+    flex-wrap: wrap;
+
+    .datefiled {
+        width: 100%;
+        max-width: 30%;
+        flex: 0 0 30%;
+    }
+
+    .dateinputs__infotxt {
+        width: 100%;
+        max-width: 40%;
+        flex: 0 0 40%;
+        padding-left: 30px;
+
+        p {
+            margin: 0;
+            font-size: 14px;
+        }
+    }
+
+    .datewrapper {
+        position: relative;
+
+        label {
+            display: inline-block;
+            cursor: pointer;
+            width: 24px;
+            position: absolute;
+            left: 15px;
+            top: 10px;
+
+
+            img {
+                vertical-align: top;
+                width: 100%;
+                transition: 0.3s;
+                filter: contrast(0.5);
+            }
+
+            &:hover img {
+                filter: contrast(1);
+            }
+        }
+
+        input {
+            padding-left: 50px;
+        }
+
+    }
+
+}
+
+.fileinfo-row {
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.timeinputs {
+    display: flex;
+    align-items: center;
+
+    input {
+        width: 100%;
+        max-width: 50px;
+        flex: 0 0 50px;
+        border-radius: 10px;
+        margin-right: 5px;
+        text-align: center;
+        padding-left: 0;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    span {
+        display: inline-block;
+        margin-right: 6px;
+    }
+}
+
+.clocktime {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+}
+
+.tablesection__ftext {
+    margin-bottom: 5px;
+}
+
+// table
+.tablesection {
+    margin-bottom: 30px;
+
+    table {
+        width: 100%;
+        border: 1px solid #3061b0;
+        border-collapse: collapse;
+
+        td {
+            border: 1px solid #3061b0;
+            padding: 10px 20px;
+            width: 20%;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 18px;
+            margin: 0;
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        .timeinputs {
+            input {
+                max-width: 36px;
+                flex: 0 0 36px;
+                height: 40px;
+            }
+        }
+
+    }
+}
+
+.tablesection__ltext {
+    font-weight: 600;
+    margin: 20px 0 0 0;
+}
+
+
+// table 8 td
+.tablesection .tablecolumn-8 {
+    td {
+        width: 12.5%;
+        padding: 10px;
+    }
+
+    .timeinputs {
+        input {
+            border-radius: 5px;
+            max-width: 20px;
+            flex: 0 0 20px;
+            height: 30px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1600.8px) {
+    .tablesection table td {
+        width: 22%;
+
+        &:nth-child(1) {
+            width: 12%;
+        }
+    }
+
+    .dateinputs .datefiled {
+        max-width: 350px;
+        flex: 0 0 350px;
+    }
+
+    .dateinputs .dateinputs__infotxt {
+        max-width: calc(100% - 350px);
+        flex: 0 0 calc(100% - 350px);
+    }
+}
+
+@media(max-width:1439.8px) {
+    .tablesection table td {
+        padding: 10px;
+    }
+}
+
+@media(max-width:1400.8px) {
+
+    .tablesection table td {
+        &:nth-child(1) {
+            width: 14%;
+        }
+
+        &.lg {
+            width: 28%;
+        }
+
+        &.sm {
+            width: 15%;
+        }
+    }
+
+
+    .file-label__title {
+        font-size: 30px;
+    }
+
+    .file-label__info .number {
+        font-size: 21px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .tablesection table p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .tablesection table {
+        min-width: 1000px;
+    }
+
+    .scrolltable {
+        overflow: auto;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .form-wrapper {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 21px;
+    }
+
+    .file-label__title {
+        font-size: 24px;
+    }
+
+    .file-information__body .title {
+        margin-bottom: 15px;
+    }
+
+
+
+
+    .file-label__body {
+        padding: 10px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .file-label__title {
+        text-align: center;
+    }
+
+    .file-label__info {
+        margin-top: 15px;
+    }
+
+    .dateinputs .datefiled,
+    .dateinputs .dateinputs__infotxt {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .dateinputs .dateinputs__infotxt {
+        padding-left: 0;
+        margin-top: 5px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .timeinputs input {
+        max-width: 40px;
+        flex: 0 0 40px;
+    }
+
+    .form-wrapper {
+        padding: 0;
+    }
+
+    .form-header h1,
+    .file-information__body .title {
+        margin-bottom: 5px;
+    }
+
+    .file-label__info {
+        margin-top: 10px;
+    }
+
+    .tablesection {
+        padding: 0 0 0 10px;
+    }
+
+    .tablesection table p {
+        font-weight: 400;
+    }
+
+    .tablesection__ftext {
+        padding-right: 20px;
+    }
+
+    .file-information__body {
+        padding: 15px 10px;
+    }
+
+    .tablesection__ltext {
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+
+
+
+
+
+
+
+
+    .form-header {
+        padding: 15px 10px;
+    }
+
+    .file-label__info .number,
+    .file-information__body .title {
+        font-size: 18px;
+    }
+
+    .form-header p {
+        font-size: 15px;
+    }
+
+    .form-header p span,
+    .file-label__info .infotext,
+    .dateinputs .dateinputs__infotxt p {
+        font-size: 12px;
+    }
+
+
+}
