@@ -1,6 +1,5 @@
 $(document).ready(function () {
     //   Date
-
     if ($('.datepicker').length) {
         $(function () {
             $(".datepicker").datepicker({
@@ -32,24 +31,19 @@ $(document).ready(function () {
         });
     }
 
-
     // Time
     document.querySelectorAll('.dateinputs').forEach(block => {
         const inputs = block.querySelectorAll('.number_input');
 
         inputs.forEach((input, index) => {
-            // Перемикання фокуса після введення цифри
             input.addEventListener('input', (e) => {
-                // Залишаємо тільки першу цифру
                 input.value = input.value.replace(/[^0-9]/g, '').slice(0, 1);
 
-                // Якщо є наступний інпут, перемикаємо фокус
                 if (input.value && index < inputs.length - 1) {
                     inputs[index + 1].focus();
                 }
             });
 
-            // Перемикання фокуса назад при Backspace
             input.addEventListener('keydown', (e) => {
                 if (e.key === 'Backspace' && input.value === '' && index > 0) {
                     inputs[index - 1].focus();
