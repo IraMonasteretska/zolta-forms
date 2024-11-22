@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form A2</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="form-wrapper">
+        <div class="form-header">
+            <h1>Form A2</h1>
+            <p>
+                Electronic psg supplemental data form
+                <span>ALL PSGs</span>
+            </p>
+        </div>
+
+        <form action="#">
+            <div class="file-label border-section">
+                <p class="section-title">
+                    File Label
+                </p>
+                <div class="file-label__body">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-10">
+                                <div class="row ">
+                                    <div class="col-md-3">
+                                        <p class="file-label__title">
+                                            22423
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="file-label__info">
+                                            <p class="number">14039</p>
+                                            <p class="infotext">Site Number</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="file-label__info">
+                                            <p class="number">8002</p>
+                                            <p class="infotext">Subject Number</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="file-label__info">
+                                            <p class="number"><span>PSG</span>01</p>
+                                            <p class="infotext">PSG Visit Code</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="file-information border-section fia2">
+                <p class="section-title">
+                    File Information
+                </p>
+                <div class="file-information__body">
+                    <div class="fileinfo-row">
+                        <div class="row g-0">
+                            <div class="col-lg-3">
+                                <p class="title">
+                                    Date of Recording:
+                                </p>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="dateinputs">
+                                    <div class="datefiled">
+                                        <div class="datewrapper">
+                                            <label for="date1"><img src="img/calendar.png" alt="icon"></label>
+                                            <input class="startdate datepicker" type="text" maxlength="10" id="date1">
+                                        </div>
+                                    </div>
+                                    <div class="dateinputs__infotxt">
+                                        <p>
+                                            (e.g. 17 AUG 2023)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fileinfo-row">
+                        <div class="row g-0 fia2__cols">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <p class="title">
+                                            System On Time:
+                                            <span>(1<sup>st</sup> epoch time)</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="dateinputs h24">
+                                            <div class="timeinputs">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <span>:</span>
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                            </div>
+                                        </div>
+                                        <p class="clocktime">
+                                            (24 hour clock time)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <p class="title">
+                                            Length of PSG:
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="dateinputs">
+                                            <div class="timeinputs">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="clocktime text-center">
+                                            (Last epoch number of PSG recording)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <p class="title">
+                                            Lights Off Time:
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="dateinputs h24">
+                                            <div class="timeinputs">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <span>:</span>
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                            </div>
+                                        </div>
+                                        <p class="clocktime">
+                                            (24 hour clock time)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <p class="title">
+                                            Epoch Number:
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="dateinputs">
+                                            <div class="timeinputs">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <p class="title">
+                                            Lights On Time:
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="dateinputs h24">
+                                            <div class="timeinputs">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <span>:</span>
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                            </div>
+                                        </div>
+                                        <p class="clocktime">
+                                            (24 hour clock time)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <p class="title">
+                                            Epoch Number:
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="dateinputs">
+                                            <div class="timeinputs">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                                <input class="number_input" inputmode="numeric" type="number"
+                                                    maxlength="1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="tablesection">
+                <div class="scrolltable">
+                    <table class="text-center setttable">
+                        <tr>
+                            <td colspan="7" class="bggrey">
+                                <p>System / Site Specific Montage Labels, Sampling Rates and Filter Settings</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bggrey">
+                                <p>PSG</p>
+                            </td>
+                            <td class="bggrey">
+                                <p>Channel</p>
+                            </td>
+                            <td class="bggrey bluetext">
+                                <p>
+                                    Labels (what the site system labels are in converted EDF data)
+                                </p>
+                            </td>
+                            <td class="bggrey redtext">
+                                <p>
+                                    Expected Labels
+                                </p>
+                            </td>
+                            <td class="bggrey">
+                                <p>
+                                    Sampling Rate
+                                </p>
+                            </td>
+                            <td class="bggrey">
+                                <p>LFF</p>
+                            </td>
+                            <td class="bggrey">
+                                <p>HFF</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>All</td>
+                            <td>Left EOG</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td class="redtext">
+                                <p>E1-M2</p>
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>All</td>
+                            <td>Right EOG</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td class="redtext">
+                                <p>E2-M2</p>
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>All</td>
+                            <td>Submentalis EMG</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td class="redtext">
+                                <p>Chin 1</p>
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>All</td>
+                            <td>Submentalis EMG</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td class="redtext">
+                                <p>Chin 2</p>
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+
+
+
+        </form>
+    </div>
+
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

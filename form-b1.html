@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form B1</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="form-wrapper">
+        <div class="form-header">
+            <h1>Form B1</h1>
+            <p>
+                Electronic mwt supplemental data form
+                <span>ALL MWTs</span>
+            </p>
+        </div>
+
+        <form action="#">
+            <div class="file-label border-section">
+                <p class="section-title">
+                    File Label
+                </p>
+                <div class="file-label__body">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-10">
+                                <div class="row ">
+                                    <div class="col-md-3">
+                                        <p class="file-label__title">
+                                            TAK8612001
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="file-label__info">
+                                            <p class="number">58004</p>
+                                            <p class="infotext">Site Number</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="file-label__info">
+                                            <p class="number">101</p>
+                                            <p class="infotext">Subject Number</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="file-label__info">
+                                            <p class="number"><span>MWT</span>02</p>
+                                            <p class="infotext">MWT Visit Code</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="file-information border-section">
+                <p class="section-title">
+                    File Information
+                </p>
+                <div class="file-information__body">
+                    <div class="fileinfo-row">
+                        <div class="row g-0">
+                            <div class="col-lg-3">
+                                <p class="title">
+                                    Date of Recording:
+                                </p>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="dateinputs">
+                                    <div class="datefiled">
+                                        <div class="datewrapper">
+                                            <label for="date1"><img src="img/calendar.png" alt="icon"></label>
+                                            <input class="startdate datepicker" type="text" maxlength="10" id="date1">
+                                        </div>
+                                    </div>
+                                    <div class="dateinputs__infotxt">
+                                        <p>
+                                            * MMM should always be alpha characters <br>(e.g. 27 OCT 2023)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fileinfo-row">
+                        <div class="row g-0">
+                            <div class="col-lg-3">
+                                <p class="title">
+                                    System On Time:
+                                    <span>(1<sup>st</sup> epoch time)</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="dateinputs h24">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                                <p class="clocktime">
+                                    (24 hour clock time)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="tablesection">
+                <p class="tablesection__ftext">
+                    Please document ALL times at the BEGINNING second of the epoch documented.
+                </p>
+                <div class="scrolltable">
+                    <table>
+                        <tr>
+                            <td colspan="2" class="bggrey">
+                                <p>
+                                    Recording Technician: <span>(please print name)</span>
+                                </p>
+                            </td>
+                            <td colspan="3">
+                                <div class="inputbox">
+                                    <input type="text" placeholder="Name">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bggrey">
+                                <p>
+                                    Trial
+                                </p>
+                            </td>
+                            <td class="bggrey lg">
+                                <p>
+                                    Lights Off Time
+                                </p>
+                            </td>
+                            <td class="bggrey sm">
+                                <p>
+                                    Lights Off Epoch Number
+                                </p>
+                            </td>
+                            <td class="bggrey lg">
+                                <p>
+                                    Lights ON Time
+                                </p>
+                            </td>
+                            <td class="bggrey sm">
+                                <p>
+                                    Lights ON Epoch Number
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    Trial 1
+                                </p>
+                            </td>
+                            <td class="lg">
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="sm">
+                                <input type="text">
+                            </td>
+                            <td class="lg">
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="sm">
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    Comment
+                                </p>
+                            </td>
+                            <td colspan="4">
+                                <textarea></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    Trial 2
+                                </p>
+                            </td>
+                            <td class="lg">
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="sm">
+                                <input type="text">
+                            </td>
+                            <td class="lg">
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="sm">
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    Comment
+                                </p>
+                            </td>
+                            <td colspan="4">
+                                <textarea></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    Trial 3
+                                </p>
+                            </td>
+                            <td class="lg">
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="sm">
+                                <input type="text">
+                            </td>
+                            <td class="lg">
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="sm">
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    Comment
+                                </p>
+                            </td>
+                            <td colspan="4">
+                                <textarea></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    Trial 4
+                                </p>
+                            </td>
+                            <td class="lg">
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="sm">
+                                <input type="text">
+                            </td>
+                            <td class="lg">
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="sm">
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    Comment
+                                </p>
+                            </td>
+                            <td colspan="4">
+                                <textarea></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p class="tablesection__ltext">
+                    * Subjects should be awakened <i>after</i> an ADDITIONAL recording of 2 minutes of consecutive sleep
+                    is seen <i>after</i> 3 continuous epochs of unambigupus stage N1, or 1 epoch of stage N2, N3 or REM
+                    Sleep is inentified. If sleep onset is not identified, trials should and after exactly 40 minutes /
+                    80 epochs.
+                </p>
+            </div>
+
+            <div class="tablesection">
+                <div class="scrolltable">
+                    <table class="text-center">
+                        <tr>
+                            <td colspan="5" class="bggrey">
+                                <p>PSG System Calibrations (done once before every MWT)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bggrey">
+                                <p>Channel</p>
+                            </td>
+                            <td class="bggrey">
+                                <p>
+                                    Required Calibration Signal Voltage
+                                </p>
+                            </td>
+                            <td class="bggrey">
+                                <p>
+                                    Calibration Signal Source
+                                </p>
+                            </td>
+                            <td class="bggrey">
+                                <p>
+                                    Actual Signal Value
+                                </p>
+                            </td>
+                            <td class="bggrey">
+                                <p>Epoch Number</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                EOG
+                            </td>
+                            <td>
+                                50 µV or 100 µV
+                            </td>
+                            <td>
+                                Internal/External
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                EOG
+                            </td>
+                            <td>
+                                50 µV or 100 µV
+                            </td>
+                            <td>
+                                Internal/External
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                EOG
+                            </td>
+                            <td>
+                                50 µV or 100 µV
+                            </td>
+                            <td>
+                                Internal/External
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                EOG
+                            </td>
+                            <td>
+                                50 µV or 100 µV
+                            </td>
+                            <td>
+                                Internal/External
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tablesection">
+                <div class="scrolltable">
+                    <table class="text-center tablecolumn-8">
+                        <tr>
+                            <td colspan="8" class="bggrey">
+                                <p>
+                                    Bio calibration (done before EVERY MWT trial)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="bggrey"></td>
+                            <td class="bggrey">
+                                <p>
+                                    "Close your eyes" <sup>23</sup>
+                                </p>
+                            </td>
+                            <td class="bggrey">
+                                <p>
+                                    "Open your eyes"
+                                </p>
+                            </td>
+                            <td class="bggrey">
+                                <p>
+                                    "Close your eyes", "Open your eyes"
+                                </p>
+                            </td>
+                            <td class="bggrey">
+                                <p>
+                                    "Look up", "Look down"
+
+                                </p>
+                            </td>
+                            <td class="bggrey">
+                                <p>
+                                    "Blink 5 times slowly"
+                                </p>
+                            </td>
+                            <td class="bggrey">
+                                <p>
+                                    "Glance to the left",
+                                    "Glance to the right"
+                                </p>
+                            </td>
+                            <td class="bggrey">
+                                <p>
+                                    "Grit your teeth",
+                                    "Stick out your tongue"
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Time / Epoch</td>
+                            <td>Time / Epoch</td>
+                            <td>Time / Epoch</td>
+                            <td>Time / Epoch</td>
+                            <td>Time / Epoch</td>
+                            <td>Time / Epoch</td>
+                            <td>Time / Epoch</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    MWT 1
+                                </p>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    MWT 2
+                                </p>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    MWT 3
+                                </p>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    MWT 4
+                                </p>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dateinputs">
+                                    <div class="timeinputs">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>:</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <span>/</span>
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                        <input class="number_input" inputmode="numeric" type="number" maxlength="1">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <table class="text-center teclog">
+                    <tr>
+                        <td colspan="8" class="bggrey">
+                            <p>
+                                Technologist's Log <sup>24</sup>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="8">
+                            <textarea></textarea>
+                        </td>
+                    </tr>
+                    <tr class="text-left">
+                        <td colspan="3" class="bggrey">
+                            <p>
+                                Form completed by (Name and Title)
+                            </p>
+                        </td>
+                        <td colspan="5">
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr class="text-left">
+                        <td colspan="3" class="bggrey">
+                            <p>
+                                Signature and Date
+                            </p>
+                        </td>
+                        <td colspan="5">
+                            <input type="text">
+                        </td>
+                    </tr>
+                </table>
+
+                <p class="tablesection__ltext">
+                    <sup>23</sup>
+                    Subjects should be instructed not to move their heads or bodies unnecessarily when performing
+                    biocalibration procedures. Head or body movement may result in artifact that obscures biocalibration
+                    signals.
+                </p>
+                <p class="tablesection__ltext">
+                    <sup>24</sup>
+                    Please describe events and specify the beginning epoch number for each event.
+                </p>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

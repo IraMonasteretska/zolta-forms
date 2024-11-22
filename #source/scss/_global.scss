@@ -10,7 +10,6 @@ body * {
     box-sizing: border-box;
 }
 
-
 h1,
 h2,
 h3,
@@ -86,9 +85,25 @@ input[type=number] {
     text-align: center;
 }
 
+.text-left {
+    text-align: left;
+}
 
+sup {
+    color: #3061b0;
+}
 
+.mt10 {
+    margin-top: 10px;
+}
 
+.bluetext {
+    color: #10397b;
+}
+
+.redtext {
+    color: #a73131;
+}
 
 
 
@@ -174,5 +189,9 @@ input[type=number] {
 @media(max-width:575.8px) {
     h1 {
         font-size: 24px;
+    }
+
+    input, textarea {
+        height: 40px;
     }
 }

@@ -1,5 +1,6 @@
 $(document).ready(function () {
     //   Date
+
     if ($('.datepicker').length) {
         $(function () {
             $(".datepicker").datepicker({
@@ -31,6 +32,7 @@ $(document).ready(function () {
         });
     }
 
+
     // Time
     document.querySelectorAll('.dateinputs').forEach(block => {
         const inputs = block.querySelectorAll('.number_input');
@@ -42,6 +44,10 @@ $(document).ready(function () {
                 if (input.value && index < inputs.length - 1) {
                     inputs[index + 1].focus();
                 }
+
+                if (block.classList.contains('h24')) {
+                    validate24HourTime(block);
+                }
             });
 
             input.addEventListener('keydown', (e) => {
@@ -51,6 +57,30 @@ $(document).ready(function () {
             });
         });
     });
+
+    function validate24HourTime(block) {
+        const inputs = block.querySelectorAll('.number_input');
+        const isHoursAndMinutesOnly = inputs.length === 4;
+    
+        const hours = `${inputs[0].value || '0'}${inputs[1].value || '0'}`;
+        const minutes = `${inputs[2].value || '0'}${inputs[3].value || '0'}`;
+        let isValidSeconds = true;
+    
+        if (!isHoursAndMinutesOnly) {
+            const seconds = `${inputs[4]?.value || '0'}${inputs[5]?.value || '0'}`;
+            isValidSeconds = parseInt(seconds, 10) >= 0 && parseInt(seconds, 10) <= 59;
+        }
+    
+        const isValidHours = parseInt(hours, 10) >= 0 && parseInt(hours, 10) <= 23;
+        const isValidMinutes = parseInt(minutes, 10) >= 0 && parseInt(minutes, 10) <= 59;
+    
+        if (!isValidHours || !isValidMinutes || !isValidSeconds) {
+            block.classList.add('invalid-time');
+        } else {
+            block.classList.remove('invalid-time');
+        }
+    }
+    
 
 
 

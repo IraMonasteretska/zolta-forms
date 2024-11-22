@@ -28,7 +28,6 @@
     }
 }
 
-
 // File Label
 .file-label {
     margin-bottom: 30px;
@@ -244,12 +243,39 @@
             height: 30px;
         }
     }
+
+    .dateinputs {
+        display: inline-flex;
+    }
 }
 
+.invalid-time .timeinputs {
+    input {
+        border: 1px solid red;
+    }
+}
 
+.fia2__cols {
+    .col-md-6 {
+        margin-top: 10px;
+    }
+}
 
+.tablesection {
+    .setttable {
+        font-size: 18px;
+        td {
+            width: 20%;
 
-
+            &:nth-child(1),
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7) {
+                width: 10%;
+            }
+        }
+    }
+}
 
 
 
@@ -280,6 +306,18 @@
     .dateinputs .dateinputs__infotxt {
         max-width: calc(100% - 350px);
         flex: 0 0 calc(100% - 350px);
+    }
+
+    .tablesection .tablecolumn-8 {
+        .timeinputs {
+            input {
+                margin-right: 2px;
+            }
+
+            span {
+                margin-right: 1px;
+            }
+        }
     }
 }
 
@@ -313,6 +351,21 @@
     .file-label__info .number {
         font-size: 21px;
     }
+
+    .tablesection .tablecolumn-8 {
+        min-width: 1300px;
+
+        td {
+            width: 12.5% !important;
+        }
+    }
+
+    .scrolltable {
+        width: 100%;
+        overflow: auto;
+    }
+
+
 }
 
 @media(max-width:1199.8px) {
@@ -327,6 +380,18 @@
 
     .scrolltable {
         overflow: auto;
+    }
+
+    .tablesection table.teclog {
+        width: 100%;
+        min-width: initial;
+        margin-top: 10px;
+    }
+
+
+    .fia2 .timeinputs input {
+        max-width: 40px;
+        flex: 0 0 40px;
     }
 }
 
@@ -418,7 +483,9 @@
         font-size: 12px;
     }
 
-
+    .tablesection table td {
+        font-size: 16px;
+    }
 
 
 
