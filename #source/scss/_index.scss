@@ -264,6 +264,7 @@
 .tablesection {
     .setttable {
         font-size: 18px;
+
         td {
             width: 20%;
 
@@ -277,11 +278,49 @@
     }
 }
 
+.fia3__cols {
+
+    .col-md-6,
+    .col-md-7 {
+        margin-bottom: 20px;
+    }
+}
 
 
+.tablesection .bio-calib td {
 
+    &:nth-child(1),
+    &:nth-child(2) {
+        width: 30%;
+    }
 
+    &:nth-child(3),
+    &:nth-child(4) {
+        width: 20%;
+    }
 
+    .dateinputs {
+        display: inline-flex;
+    }
+}
+
+.dateinputs.w100 .datefiled {
+    max-width: 100%;
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+.border-section.fia3 {
+    .file-information__body:not(:first-child) {
+        border-top: 1px solid #3061b0;
+    }
+
+    .subtitle {
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
 
 
 
