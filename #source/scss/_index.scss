@@ -280,8 +280,8 @@
 
 .fia3__cols {
 
-    .col-md-6,
-    .col-md-7 {
+    &>.col-md-6,
+    &>.col-lg-7 {
         margin-bottom: 20px;
     }
 }
@@ -319,13 +319,77 @@
         margin-top: 30px;
         font-weight: 500;
         font-size: 18px;
+        text-decoration: underline;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+.border-section {
+    ul {
+        margin: 0;
+
+        li {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
+.checkfield {
+    display: flex;
+    flex-wrap: wrap;
 
+    input[type="checkbox"] {
+        display: none;
 
+        &:checked+label {
+            &::after {
+                background: url('../img/check.png') no-repeat center / 16px;
+            }
+        }
+    }
 
+    label {
+        cursor: pointer;
+        position: relative;
+        padding-left: 40px;
+        width: 100%;
+        max-width: 30%;
+        flex: 0 0 30%;
+        display: flex;
+        align-items: center;
 
+        &::after {
+            content: '';
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            border: 1px solid #3061b0;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    input {
+        width: 100%;
+        max-width: 70%;
+        flex: 0 0 70%;
+    }
+}
+
+.checkrow {
+    .col-lg-12 {
+        margin-bottom: 20px;
+    }
+}
 
 
 @media(max-width:1600.8px) {
@@ -452,7 +516,15 @@
         margin-bottom: 15px;
     }
 
+    .checkfield label,
+    .checkfield input {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
 
+    .checkfield input {
+        margin-top: 15px;
+    }
 
 
     .file-label__body {
@@ -526,7 +598,14 @@
         font-size: 16px;
     }
 
+    .form-header,
+    .file-label {
+        margin-bottom: 20px;
+    }
 
+    .dateinputs .datewrapper label {
+        top: 8px;
+    }
 
 
 
