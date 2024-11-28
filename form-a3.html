@@ -19,37 +19,43 @@
                 <span>screening PSGs</span>
             </p>
         </div>
-
-        <div class="file-label border-section">
-            <p class="section-title">
-                File Label
-            </p>
-            <div class="file-label__body">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-10">
-                            <div class="row ">
-                                <div class="col-md-3">
-                                    <p class="file-label__title">
-                                        22423
-                                    </p>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="file-label__info">
-                                        <p class="number">14039</p>
-                                        <p class="infotext">Site Number</p>
+        <form action="#" data-form-name="Form A3">
+            <div class="file-label border-section">
+                <p class="section-title formsect-title">
+                    File Label
+                </p>
+                <div class="file-label__body">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-10">
+                                <div class="row ">
+                                    <div class="col-md-3">
+                                        <p class="file-label__title">
+                                            22423
+                                        </p>
+                                        <input name="File Label" type="text" value="22423" style="display: none;">
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="file-label__info">
-                                        <p class="number">8002</p>
-                                        <p class="infotext">Subject Number</p>
+                                    <div class="col-md-3">
+                                        <div class="file-label__info">
+                                            <p class="number">14039</p>
+                                            <p class="infotext">Site Number</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="file-label__info">
-                                        <p class="number"><span>PSG</span>01</p>
-                                        <p class="infotext">PSG Visit Code</p>
+                                    <div class="col-md-3">
+                                        <div class="file-label__info">
+                                            <p class="number">8002</p>
+                                            <p class="infotext">Subject Number</p>
+                                            <input name="Subject Number" type="text" value="8002"
+                                                style="display: none;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="file-label__info">
+                                            <p class="number"><span>PSG</span>01</p>
+                                            <p class="infotext">PSG Visit Code</p>
+                                            <input name="PSG Visit Code" type="text" value="PSG 01"
+                                                style="display: none;">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -57,12 +63,13 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <form action="#">
+
             <div class="file-information border-section fia3">
+                <p class="section-title formsect-title" style="display: none;">
+                    File Information
+                </p>
                 <div class="file-information__body">
-
                     <div class="fileinfo-row">
                         <div class="row fia3__cols">
                             <div class="col-md-6">
@@ -73,7 +80,7 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-7 col-md-12 col-sm-6">
-                                        <input type="text">
+                                        <input name="Certified Site Scorer Name" type="text">
                                     </div>
                                 </div>
                             </div>
@@ -85,7 +92,7 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-7 col-md-12 col-sm-6">
-                                        <input type="email">
+                                        <input name="Email" type="email">
                                     </div>
                                 </div>
                             </div>
@@ -101,7 +108,7 @@
                                             <div class="datefiled">
                                                 <div class="datewrapper">
                                                     <label for="date1"><img src="img/calendar.png" alt="icon"></label>
-                                                    <input class="startdate datepicker" type="text" maxlength="10"
+                                                    <input name="Date of Recording" class="startdate datepicker" type="text" maxlength="10"
                                                         id="date1">
                                                 </div>
                                             </div>
@@ -119,13 +126,13 @@
                                     <div class="col-xl-4 col-lg-5 col-md-5 col-sm-6">
                                         <div class="dateinputs">
                                             <div class="timeinputs">
-                                                <input class="number_input" inputmode="numeric" type="number"
+                                                <input name="AHI (per hour of sleep)" class="number_input" inputmode="numeric" type="number"
                                                     maxlength="1">
-                                                <input class="number_input" inputmode="numeric" type="number"
+                                                <input name="AHI (per hour of sleep)" class="number_input" inputmode="numeric" type="number"
                                                     maxlength="1">
-                                                <input class="number_input" inputmode="numeric" type="number"
+                                                <input name="AHI (per hour of sleep)" class="number_input" inputmode="numeric" type="number"
                                                     maxlength="1">
-                                                <input class="number_input" inputmode="numeric" type="number"
+                                                <input name="AHI (per hour of sleep)" class="number_input" inputmode="numeric" type="number"
                                                     maxlength="1">
                                             </div>
                                         </div>
@@ -145,13 +152,13 @@
                                     <div class="col-xl-4 col-lg-5 col-md-5 col-sm-6">
                                         <div class="dateinputs">
                                             <div class="timeinputs">
-                                                <input class="number_input" inputmode="numeric" type="number"
+                                                <input name="PLMAI (per hour of sleep)" class="number_input" inputmode="numeric" type="number"
                                                     maxlength="1">
-                                                <input class="number_input" inputmode="numeric" type="number"
+                                                <input name="PLMAI (per hour of sleep)" class="number_input" inputmode="numeric" type="number"
                                                     maxlength="1">
-                                                <input class="number_input" inputmode="numeric" type="number"
+                                                <input name="PLMAI (per hour of sleep)" class="number_input" inputmode="numeric" type="number"
                                                     maxlength="1">
-                                                <input class="number_input" inputmode="numeric" type="number"
+                                                <input name="PLMAI (per hour of sleep)" class="number_input" inputmode="numeric" type="number"
                                                     maxlength="1">
                                             </div>
                                         </div>
@@ -189,7 +196,7 @@
                     <div class="row align-items-center checkrow">
                         <div class="col-lg-12">
                             <div class="checkfield">
-                                <input type="checkbox" id="check1">
+                                <input name="Subject meets eligibility criteria" type="checkbox" id="check1">
                                 <label for="check1">
                                     Subject meets eligibility criteria
                                 </label>
@@ -201,7 +208,7 @@
                                 <label for="check2">
                                     Subject does not meet eligibility criteria due to:
                                 </label>
-                                <input type="text">
+                                <input name="Subject does not meet eligibility criteria due to" type="text">
                             </div>
                         </div>
                     </div>
@@ -214,7 +221,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-7 col-md-12 col-sm-6">
-                                    <input type="text">
+                                    <input name="Reviewed by" type="text">
                                 </div>
                             </div>
                         </div>
@@ -230,7 +237,7 @@
                                         <div class="datefiled">
                                             <div class="datewrapper">
                                                 <label for="date2"><img src="img/calendar.png" alt="icon"></label>
-                                                <input class="startdate datepicker" type="text" maxlength="10"
+                                                <input name="Date of Recording (Disposition)" class="startdate datepicker" type="text" maxlength="10"
                                                     id="date2">
                                             </div>
                                         </div>
@@ -246,7 +253,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-7 col-md-12 col-sm-6">
-                                    <input type="text">
+                                    <input name="DM Initial/Date" type="text">
                                 </div>
                             </div>
                         </div>
@@ -258,7 +265,7 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-7 col-md-12 col-sm-6">
-                                    <input type="text">
+                                    <input name="QC Initial/Date" type="text">
                                 </div>
                             </div>
                         </div>
@@ -266,8 +273,8 @@
                 </div>
             </div>
 
-
-
+            <button id="generateJson" type="button">Submit</button>
+            <pre  id="jsonOutput"></pre>
 
         </form>
 

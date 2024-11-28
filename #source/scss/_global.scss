@@ -110,6 +110,23 @@ sup {
 }
 
 
+button{
+    width: 250px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    border: 1px solid #10397b;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    transition: .3s;
+    &:hover{
+        filter: brightness(90%);
+    }
+}
+
+
 
 // datepicker
 .ui-datepicker {
