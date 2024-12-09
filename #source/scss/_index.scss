@@ -1,54 +1,56 @@
 .form-wrapper {
-    padding: 40px;
+    padding: 0;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .form-header {
     text-align: center;
     border: 1px solid #3061b0;
-    padding: 20px;
+    padding: 15px;
     background: #3061b01f;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     h1 {
         text-transform: uppercase;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     p {
         text-transform: uppercase;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         margin: 0;
 
         span {
             text-transform: initial;
             display: block;
-            font-size: 14px;
+            font-size: 12px;
         }
     }
 }
 
 // File Label
 .file-label {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .section-title {
     text-align: center;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
     background: #3061b01f;
     border-bottom: 1px solid #3061b0;
-    padding: 10px 20px;
+    padding: 8px 15px;
     margin: 0;
 }
 
 .file-label__body {
-    padding: 20px;
+    padding: 15px;
 }
 
 .file-label__title {
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 600;
     text-transform: uppercase;
     word-break: break-all;
@@ -59,32 +61,33 @@
     text-align: center;
 
     .number {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 500;
         margin: 0;
     }
 
     .infotext {
         margin: 0;
+        font-size: 14px;
     }
 }
 
 // File info
 .file-information {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .file-information__body {
-    padding: 20px;
+    padding: 15px;
 
     .title {
         margin: 0;
         font-weight: 500;
-        font-size: 21px;
+        font-size: 16px;
 
         span {
             display: block;
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 400;
             line-height: 120%;
         }
@@ -109,7 +112,7 @@
 
         p {
             margin: 0;
-            font-size: 14px;
+            font-size: 12px;
         }
     }
 
@@ -119,10 +122,10 @@
         label {
             display: inline-block;
             cursor: pointer;
-            width: 24px;
+            width: 20px;
             position: absolute;
             left: 15px;
-            top: 10px;
+            top: 7px;
 
 
             img {
@@ -159,12 +162,13 @@
 
     input {
         width: 100%;
-        max-width: 50px;
-        flex: 0 0 50px;
+        max-width: 36px;
+        flex: 0 0 36px;
         border-radius: 10px;
         margin-right: 5px;
         text-align: center;
         padding-left: 0;
+        height: 36px;
 
         &:last-child {
             margin-right: 0;
@@ -197,13 +201,13 @@
 
         td {
             border: 1px solid #3061b0;
-            padding: 10px 20px;
+            padding: 10px 15px;
             width: 20%;
         }
 
         p {
             font-weight: 600;
-            font-size: 18px;
+            font-size: 14px;
             margin: 0;
 
             span {
@@ -215,7 +219,7 @@
             input {
                 max-width: 36px;
                 flex: 0 0 36px;
-                height: 40px;
+                height: 36px;
             }
         }
 
@@ -225,6 +229,7 @@
 .tablesection__ltext {
     font-weight: 600;
     margin: 20px 0 0 0;
+    font-size: 12px;
 }
 
 
@@ -261,9 +266,13 @@
     }
 }
 
+table td {
+    font-size: 14px;
+}
+
 .tablesection {
     .setttable {
-        font-size: 18px;
+        font-size: 14px;
 
         td {
             width: 20%;
@@ -281,8 +290,9 @@
 .fia3__cols {
 
     &>.col-md-6,
-    &>.col-lg-7 {
-        margin-bottom: 20px;
+    &>.col-lg-7,
+    &>.col-lg-8 {
+        margin-bottom: 15px;
     }
 }
 
@@ -316,12 +326,12 @@
     }
 
     .subtitle {
-        margin-top: 30px;
+        margin-top: 20px;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         text-decoration: underline;
         display: inline-block;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
 
@@ -332,7 +342,8 @@
         margin: 0;
 
         li {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+            font-size: 14px;
 
             &:last-child {
                 margin-bottom: 0;
@@ -358,17 +369,18 @@
     label {
         cursor: pointer;
         position: relative;
-        padding-left: 40px;
+        padding-left: 30px;
         width: 100%;
         max-width: 30%;
         flex: 0 0 30%;
         display: flex;
         align-items: center;
+        font-size: 14px;
 
         &::after {
             content: '';
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
             display: inline-block;
             border: 1px solid #3061b0;
             position: absolute;
@@ -390,6 +402,33 @@
         margin-bottom: 20px;
     }
 }
+
+.tablesection.sminp {
+    table .timeinputs input {
+        max-width: 30px;
+        flex: 0 0 30px;
+        height: 30px;
+        border-radius: 6px;
+        margin-right: 2px;
+    }
+
+    .timeinputs span {
+        display: inline-block;
+        margin-right: 2px;
+    }
+}
+
+.tablecolumn-8 {
+    min-width: 1500px;
+    width: 100%;
+}
+
+
+.scrolltable {
+    overflow: auto;
+}
+
+
 
 
 @media(max-width:1600.8px) {
@@ -468,12 +507,33 @@
         overflow: auto;
     }
 
+    .tablesection table .timeinputs input {
+        max-width: 30px;
+        flex: 0 0 30px;
+        height: 30px;
+    }
+
+    .file-information__body .title {
+        font-size: 16px;
+    }
+
+    .file-label__info .number {
+        font-size: 18px;
+    }
+
+    .file-label__title {
+        font-size: 24px;
+    }
+
 
 }
 
 @media(max-width:1199.8px) {
+    .form-wrapper {
+        width: 100%;
+    }
+
     .tablesection table p {
-        font-size: 16px;
         font-weight: 500;
     }
 
@@ -491,21 +551,19 @@
         margin-top: 10px;
     }
 
+    .tablesection table td.sm {
+        width: 18%;
+    }
 
-    .fia2 .timeinputs input {
-        max-width: 40px;
-        flex: 0 0 40px;
+    .tablesection table td.lg {
+        width: 25%;
     }
 }
 
 @media(max-width:991.8px) {
 
     .form-wrapper {
-        padding: 20px;
-    }
-
-    .section-title {
-        font-size: 21px;
+        padding: 5px;
     }
 
     .file-label__title {
@@ -513,7 +571,7 @@
     }
 
     .file-information__body .title {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .checkfield label,
@@ -555,10 +613,6 @@
 }
 
 @media(max-width:575.8px) {
-    .timeinputs input {
-        max-width: 40px;
-        flex: 0 0 40px;
-    }
 
     .form-wrapper {
         padding: 0;
@@ -570,7 +624,7 @@
     }
 
     .file-label__info {
-        margin-top: 10px;
+        margin-top: 3px;
     }
 
     .tablesection {
@@ -594,10 +648,6 @@
         font-size: 12px;
     }
 
-    .tablesection table td {
-        font-size: 16px;
-    }
-
     .form-header,
     .file-label {
         margin-bottom: 20px;
@@ -612,12 +662,16 @@
 
 
     .form-header {
-        padding: 15px 10px;
+        padding: 10px 10px;
+    }
+
+    .file-label__title {
+        font-size: 21px;
     }
 
     .file-label__info .number,
     .file-information__body .title {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .form-header p {
@@ -629,6 +683,28 @@
     .dateinputs .dateinputs__infotxt p {
         font-size: 12px;
     }
+
+    .tablesection table td {
+        padding: 5px;
+    }
+
+    .file-information__body .title,
+    .file-label__info .number {
+        font-size: 16px;
+    }
+
+    .fileinfo-row {
+        margin-bottom: 10px;
+    }
+
+    .border-section.fia3 .subtitle {
+        margin: 15px 0;
+    }
+
+    .checkrow .col-lg-12 {
+        margin-bottom: 10px;
+    }
+
 
 
 }

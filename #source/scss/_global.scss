@@ -22,7 +22,7 @@ p {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .border-section {
@@ -31,13 +31,13 @@ h1 {
 
 input,
 textarea {
-    height: 46px;
+    height: 36px;
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 30px;
     outline: none;
     transition: 0.3s;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Poppins", sans-serif;
     padding-left: 15px;
 
@@ -49,7 +49,7 @@ textarea {
 textarea {
     resize: none;
     border-radius: 5px;
-    height: 100px;
+    height: 70px;
     padding-top: 10px;
 
     &::-webkit-scrollbar {
@@ -107,23 +107,6 @@ sup {
 
 .m0 {
     margin: 0;
-}
-
-
-button{
-    width: 250px;
-    border-radius: 20px;
-    padding: 5px 20px;
-    border: 1px solid #10397b;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    transition: .3s;
-    &:hover{
-        filter: brightness(90%);
-    }
 }
 
 
@@ -212,7 +195,4 @@ button{
         font-size: 24px;
     }
 
-    input, textarea {
-        height: 40px;
-    }
 }
